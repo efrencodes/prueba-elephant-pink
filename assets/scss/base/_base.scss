@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'Poppins';
+    font-size: 12px;
+    box-sizing: border-box;
+}
