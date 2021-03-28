@@ -1,12 +1,34 @@
 <template>
-  <div class="container">
-    <img
-      src="https://res.cloudinary.com/efrenmartinez/image/upload/v1615782991/prueba-elephant-pink/logotipo_jhgagt.svg"
-      alt="Logotipo"
-    />
+  <div>
+    <Header />
+    <Carousel />
+    <SectionCollection />
+    <Footer />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'PageIndex',
+  data() {
+    return {
+      active: true,
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.onScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.onScroll)
+  },
+  methods: {
+    onScroll() {
+      // eslint-disable-next-line no-console
+      console.log(window.scrollY > 100)
+      // eslint-disable-next-line no-console
+      console.log(window.scrollY > 0)
+      this.active = window.scrollY < 100 || window.scrollY < 0
+    },
+  },
+}
 </script>
