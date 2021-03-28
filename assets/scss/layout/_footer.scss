@@ -1,0 +1,22 @@
+footer {
+    height: 100px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    .footer-left {
+        a {
+            color: var(--color-white);
+            font-size: 10px;
+            &:first-child::after {
+                content: '|';
+                margin-left: 10px;
+                margin-right: 10px;
+                color: var(--color-white);
+            }
+        }
+    }
+    .footer-right {
+        a:first-child {
+            margin-right: 10px;
+        }
+    }
+}

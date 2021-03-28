@@ -1,0 +1,31 @@
+.lock {
+    background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616898970/prueba-elephant-pink/images/lock_bcp4t8.svg');
+    width: 14px;
+    height: 18px;
+    display: block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.diamond {
+    &-active {
+        background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616901070/prueba-elephant-pink/images/diamond-active_byangf.svg');
+        width: 10px;
+        height: 16px;
+        display: block;
+    }
+}
+
+.search {
+    background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616905144/prueba-elephant-pink/images/search_ifpls1.svg');
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow {
+    background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616909191/prueba-elephant-pink/images/arrow_vaxc2j.svg');
+    display: block;
+    width: 21px;
+    height: 18px;
+}

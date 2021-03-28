@@ -10,3 +10,8 @@ html {
     font-size: 12px;
     box-sizing: border-box;
 }
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}

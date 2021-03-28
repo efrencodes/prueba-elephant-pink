@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
-@import 'base/reset.scss';
-@import 'base/typography.scss';
-@import 'base/base.scss';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+@import 'base/root';
+
+@import 'helpers/variables';
+@import 'helpers/helpers';
+@import 'helpers/flexbox';
+
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/divider';
+@import 'components/icons';
+@import 'components/select';
+@import 'components/carousel';
+
+@import 'layout/footer';
+@import 'layout/header';
