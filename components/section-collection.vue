@@ -7,7 +7,7 @@
     </p>
     <div class="section-collection-card" style="margin-top: 60px">
       <template v-for="i in 3">
-        <Card :key="i" />
+        <Card :key="i" :index="i" />
       </template>
     </div>
     <div
@@ -16,11 +16,11 @@
       style="margin-top: 30px"
     >
       <template v-for="i in 3">
-        <Card :key="i" />
+        <Card :key="i" :index="i + 3" />
       </template>
     </div>
     <button class="btn" @click="isVisible = !isVisible">VIEW ALL</button>
-    <Contact />
+    <Contact @open="$emit('open')" />
   </section>
 </template>
 
@@ -53,7 +53,9 @@ export default {
   p {
     margin-top: 30px;
     color: var(--color-gray);
-    font-size: 10px;
+    font-size: 12px;
+    width: 500px;
+    margin: 30px auto;
   }
   &-card {
     display: grid;

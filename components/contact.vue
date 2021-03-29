@@ -11,7 +11,7 @@
       </p>
     </div>
     <div class="contact-right">
-      <button class="btn">Contact</button>
+      <button class="btn" @click="$emit('open')">Contact</button>
     </div>
   </div>
 </template>

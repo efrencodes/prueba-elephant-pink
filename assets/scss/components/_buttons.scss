@@ -51,3 +51,16 @@
         border: none;
     }
 }
+
+.btn {
+    &-send {
+        height: 40px;
+        color: var(--color-black);
+        background-color: #E1B25E;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-weight: 500;
+        border: none;
+        min-width: 150px;
+    }
+}

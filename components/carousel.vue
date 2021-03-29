@@ -87,7 +87,7 @@ export default {
   transform: translate(100%);
 }
 .image {
-  background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616908825/prueba-elephant-pink/images/jewelry-carousel_zlfidk.jpg');
+  background-image: url('https://res.cloudinary.com/efrenmartinez/image/upload/v1616974459/prueba-elephant-pink/images/jewelry-carousel_cwa1ru.jpg');
   background-size: cover;
 }
 .btn {

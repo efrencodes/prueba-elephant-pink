@@ -1,0 +1,33 @@
+.input-primary {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 20px;
+    height: 40px;
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    transition: border 0.5s ease-out;
+    font-family: 'Poppins';
+    &:focus {
+        border: 3px solid #E1B25E;
+    }
+}
+.textarea-primary {
+    width: 100%;
+    margin-bottom: 20px;
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 20px;
+    color: var(--color-black);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 8px 0;
+    border: 1px solid var(--color-gray);
+    font-family: 'Poppins';
+    font-weight: 400;
+    &:focus {
+        border: 3px solid #E1B25E;
+    }
+}

@@ -1,21 +1,28 @@
 <template>
   <article class="card flex column justify-center text-center align-center">
     <img
-      src="https://res.cloudinary.com/efrenmartinez/image/upload/v1615792654/prueba-elephant-pink/images/shutterstock_bizeto.jpg"
+      src="https://res.cloudinary.com/efrenmartinez/image/upload/v1616974459/prueba-elephant-pink/images/shutterstock_sfa9yt.jpg"
       alt="Anillo de plata"
     />
-    <h4>diamond 3</h4>
+    <h4>diamond {{ index }}</h4>
     <hr />
     <p>
       The sparkles of the diamonds on this powerful ring symbolize the strength
       of beaty
     </p>
+    <i class="diamond-active"></i>
   </article>
 </template>
 
 <script>
 export default {
   name: 'Card',
+  props: {
+    index: {
+      type: Number,
+      required: true,
+    },
+  },
 }
 </script>
 
@@ -30,10 +37,9 @@ export default {
   h4 {
     font-size: 20px;
     font-family: Didot;
-    line-height: 25px;
-    text-transform: uppercase;
     font-weight: lighter;
     margin-top: 30px;
+    text-transform: uppercase;
     margin-bottom: 20px;
   }
   p {
@@ -43,6 +49,9 @@ export default {
   hr {
     width: 50%;
     background: hsla(0, 0%, 76.9%, 0.36);
+  }
+  i {
+    margin-top: 25px;
   }
 }
 </style>
