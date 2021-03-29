@@ -1,6 +1,6 @@
 <template>
   <section class="section-collection container text-center">
-    <hr />
+    <hr class="title" />
     <p>
       Specially crafted with utmost of precision and care, our dreamy jewels are
       meant to make your wishes come true.
@@ -38,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .section-collection {
   padding: 85px 100px 20px 100px;
-  hr::after {
+  hr.title::after {
     content: 'OUR COLLECTION';
     display: inline-block;
     position: relative;
