@@ -1,6 +1,10 @@
 <template>
   <section class="section-collection container text-center">
-    <hr class="title" />
+    <h1>
+      <hr />
+      OUR COLLECTION
+      <hr />
+    </h1>
     <p>
       Specially crafted with utmost of precision and care, our dreamy jewels are
       meant to make your wishes come true.
@@ -38,6 +42,19 @@ export default {
 <style lang="scss" scoped>
 .section-collection {
   padding: 85px 100px 20px 100px;
+  h1 {
+    font-family: Didot;
+    color: var(--color-black);
+    letter-spacing: 4px;
+    font-size: 1.8em;
+    font-weight: normal;
+    hr {
+      display: inline-block;
+      width: 36%;
+      margin: 5px 10px;
+      border-top: 1px solid #e5e5e5;
+    }
+  }
   hr.title::after {
     content: 'OUR COLLECTION';
     display: inline-block;
