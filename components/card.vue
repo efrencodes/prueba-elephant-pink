@@ -4,7 +4,7 @@
       src="https://res.cloudinary.com/efrenmartinez/image/upload/v1616974459/prueba-elephant-pink/images/shutterstock_sfa9yt.jpg"
       alt="Anillo de plata"
     />
-    <h4>diamond {{ index }}</h4>
+    <h1>diamond {{ index }}</h1>
     <hr />
     <p>
       The sparkles of the diamonds on this powerful ring symbolize the strength
@@ -34,7 +34,7 @@ export default {
     max-width: 180px;
     width: 100%;
   }
-  h4 {
+  h1 {
     font-size: 20px;
     font-family: Didot;
     font-weight: lighter;

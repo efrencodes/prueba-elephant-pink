@@ -36,7 +36,14 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots',
   ],
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/user',
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
