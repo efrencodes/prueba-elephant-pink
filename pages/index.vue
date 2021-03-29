@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header :class="{ fixed: !active }" />
     <Carousel />
     <SectionCollection @open="showModal = true" />
     <Footer />
@@ -68,11 +68,7 @@ export default {
   },
   methods: {
     onScroll() {
-      // eslint-disable-next-line no-console
-      console.log(window.scrollY > 100)
-      // eslint-disable-next-line no-console
-      console.log(window.scrollY > 0)
-      this.active = window.scrollY < 100 || window.scrollY < 0
+      this.active = window.scrollY < 200 || window.scrollY < 0
     },
     onSubmit() {
       if (
@@ -90,6 +86,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fixed {
+  transition: background-color 250ms ease-in-out;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  background-color: white;
+}
 .h4-modal {
   font-family: Didot;
   font-size: 25px;

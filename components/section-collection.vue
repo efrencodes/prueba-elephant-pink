@@ -55,18 +55,6 @@ export default {
       border-top: 1px solid #e5e5e5;
     }
   }
-  hr.title::after {
-    content: 'OUR COLLECTION';
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.8em;
-    padding: 0 10px;
-    font-family: Didot;
-    background: var(--color-white);
-    color: var(--color-black);
-    letter-spacing: 4px;
-  }
   p {
     margin-top: 30px;
     color: var(--color-gray);
